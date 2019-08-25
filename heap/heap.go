@@ -17,6 +17,10 @@ type Heap struct {
 	min  bool
 }
 
+func (h *Heap)Data()[]Item{
+	return h.data
+}
+
 func New() *Heap {
 	return &Heap{
 		data: make([]Item, 0),

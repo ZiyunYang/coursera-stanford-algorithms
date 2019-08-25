@@ -37,6 +37,9 @@ func NewMin() (q *PQ) {
 	}
 }
 
+func(pq *PQ)Data()[]heap.Item{
+	return pq.data.Data()
+}
 func (pq *PQ) Len() int {
 	return pq.data.Len()
 }
